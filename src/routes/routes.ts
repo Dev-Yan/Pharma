@@ -7,6 +7,6 @@ const routes = Router();
 routes.get("/", async (req, res) => {
 });
 
-routes.post("/", new CreateCategoryController().execute);
+routes.post("/category", new CreateCategoryController().execute);
 
 export default routes;

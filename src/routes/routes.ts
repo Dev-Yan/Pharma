@@ -4,7 +4,6 @@ import { ListCategoriesController } from "../controllers/category/ListCategoryCo
 
 const routes = Router();
 
-routes.get("/categories", new ListCategoriesController().execute);
-routes.post("/category", new CreateCategoryController().execute);
+routes.get("/category", new ListCategoriesController().execute);
 
 export default routes;

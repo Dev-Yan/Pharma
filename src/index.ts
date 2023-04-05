@@ -13,3 +13,7 @@ app.use(express.text({ type: "text/html" }));
 app.listen(port, () => {
   console.log(`Server started in port http://localhost:${port}`);
 });
+
+app.get("/", async (req, res) => {
+  res.json({ message: "Server is running!🔥" });
+});

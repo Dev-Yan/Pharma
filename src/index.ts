@@ -15,5 +15,5 @@ app.listen(port, () => {
 });
 
 app.get("/", async (req, res) => {
-  res.json({ message: "Server is running!🔥" });
+  res.send({ message: "Server is running!🔥" });
 });
